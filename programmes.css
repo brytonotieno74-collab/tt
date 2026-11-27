@@ -325,7 +325,7 @@ footer{
         .intro{
             font-size:1.5rem;
         }
-        .diploma{
+        .diploma,.under-graduate,.post-graduate{
             width:100%;
         }
         .wrapper{
@@ -334,11 +334,11 @@ footer{
             gap:1px;
             justify-content: flex-start;
             scroll-padding: 10rem;
-            scroll-behavior: smooth;
             overflow-x: auto;
-            width:auto;
+            scroll-behavior: smooth;
+            width:40rem;
             height:30rem;
-            margin:1rem 6rem;
+            margin:1rem auto;
             font-size:1.5rem;
 
         }
@@ -357,8 +357,9 @@ footer{
         .diploma-item{
             background: linear-gradient(to right, rgb(17, 151, 51),rgba(7, 8, 8, 0.7)),url(images/logos/idTANap0nl_logos.jpeg);
             flex:1 0 100%;
+            scroll-behavior: smooth;
             width:100%;
-           scroll-snap-align: start;
+            scroll-snap-align: center;
              scroll-snap-stop: always;
             /* animation: slide 16s infinite alternate-reverse running; */
         }
