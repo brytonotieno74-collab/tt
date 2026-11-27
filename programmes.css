@@ -198,7 +198,100 @@ footer{
         padding:.3rem;
         border-radius: 10px;
     }
-    @media(36rem<width<=48rem){
+    @media(width>62rem){
+        html{
+            font-size:80%;
+        }
+        
+        .fa-chevron-left{
+            position:relative;
+            top:10px;
+            font-size:1.8rem;
+        }
+        .logo{
+            position:relative;
+            right:150px;
+        }
+        .navigation{
+            padding:2rem;
+        }
+        header h1{
+            font-size:2.5rem;
+        }
+        .search-bar{
+            margin:0.8rem 36rem;
+            border:2px solid #fff;
+        }
+        ::placeholder{
+            font-size:1.4rem
+        }
+        .fa-magnifying-glass{
+            font-size:1.8rem;
+        }
+        .intro{
+            font-size:1.9rem;
+        }
+        .diploma h3,.under-graduate h3,.post-graduate h3{
+            font-size:1.8rem;
+        }
+        .diploma-item h4{
+            font-size:1.5rem;
+        }
+        .wrapper{
+             display:grid;
+             margin:1rem 2rem;
+            overflow-x: hidden;
+             gap:5px;
+             grid-template-columns: repeat(3,1fr);
+    }
+        .diploma-item{
+            width:85%;
+            background: linear-gradient(to right, rgb(5, 148, 41),rgba(0,0,0,0.7)),url("images/logos/idTANap0nl_logos.jpeg");
+        }
+        .diploma-item a{
+            text-align: center;
+            margin:1rem 4rem;
+            font-size:1.2rem;
+        }
+}
+    @media(62rem>width>48rem){
+        html{
+            font-size:80%;
+        }
+        .wrapper{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            margin:1rem 10rem;
+        }
+        .search-bar{
+            margin:0.5rem 16rem;
+        }
+        .fa-chevron-left{
+            position:relative;
+            top:12px;
+            font-size:1.5rem;
+        }
+        .navigation a{
+            font-size:1.3rem;
+        }
+        .logo{
+            font-size:1.5rem;
+        }
+        header h1{
+            font-size:1.9rem;
+        }
+        .intro{
+            font-size:1.6rem;
+        }
+        .diploma-item{
+            background: linear-gradient(to right, rgb(5, 148, 41),rgba(0,0,0,0.7)),url("images/logos/idTANap0nl_logos.jpeg");
+            margin:1rem 0.2rem;
+        }
+        .diploma-item a{
+            text-align: center;
+        }
+    }
+    @media(36rem<=width<=48rem){
          body{
             min-height: 100vh;
              background:linear-gradient(to right,rgba(0,0,0,0.8),
@@ -216,9 +309,7 @@ footer{
             padding:2.3rem;
         }
         .logo{
-            position:relative;
-            left:-30px;
-            top:-15px;
+            display: none;
         }
         .search-bar{
             margin:1.3rem 10rem;

@@ -321,7 +321,7 @@ header h1{
     margin-right:20rem;
   }
 }
-@media(62rem>width>=48rem){
+@media(62rem>width>=47rem){
     html{
         font-size:80%;
     }
@@ -339,7 +339,7 @@ header h1{
   }
     
 }
-@media(36rem<width<48rem){
+@media(36rem<=width<=48rem){
     html{
         font-size:75%;
     }
@@ -376,21 +376,34 @@ header h1{
     .container{
         display: flex;
         justify-content: flex-start;
-        scroll-snap-type:x mandatory;
+        /* scroll-snap-type:x mandatory; */
         scroll-behavior: smooth;
         width:100%;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
     .container::-webkit-scrollbar{
         display:none;
     }
     .container-items{
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
+        /* scroll-snap-align: start; */
+        /* scroll-snap-stop: always; */
         flex:0 0 100%;
         width:30%;
         height:30rem;
+        animation: slide 16s infinite ease running;
     }
+       @keyframes slide{
+           0%{transform: translateX(0);}
+           25%{transform: translateX(0);}
+           30%{transform: translateX(-100%);}
+           50%{transform: translateX(-100%);}
+           55%{transform: translateX(-200%); 
+        }
+           75%{transform: translateX(-200%); }
+           80%{transform: translateX(-300%); }
+           100%{transform: translateX(-300%); }
+
+        }
      .container h4{
         text-align: center;
         margin:1rem auto;
